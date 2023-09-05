@@ -1,0 +1,12 @@
+/* Add CSS here */
+.font-cursive {
+  font-family: Rouge Script, cursive;
+}
+.bg-gradient {
+  background: linear-gradient(
+    35deg,
+    rgba(254, 127, 205, 0.9),
+    rgba(244, 117, 82, 0.9),
+    rgba(254, 127, 205, 0.2)
+  );
+}

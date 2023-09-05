@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="d-flex d-flex-center parent">
+      <div class="bg-block"></div>
+      <div class="fg-block">
+        <div class="d-flex d-flex-center close-window">
+          <i class="fa-solid fa-xmark" style="color: gray"></i>
+        </div>
+        <div class="d-flex d-flex-column rating">
+          <h2>Overall rating</h2>
+          <div class="star-container">
+            <i class="fa-solid fa-star star-border" style="color: #fff838"></i>
+            <i class="fa-solid fa-star star-border" style="color: #fff838"></i>
+            <i class="fa-solid fa-star star-border" style="color: #fff838"></i>
+            <i class="fa-solid fa-star star-border" style="color: #fff838"></i>
+            <i
+              class="fa-regular fa-star star-border"
+              style="color: #f1f3f7"
+            ></i>
+          </div>
+          <span> Click to rate </span>
+        </div>
+        <div class="review">
+          <h4>Review title</h4>
+          <input type="text" placeholder="Example: Easy to use" />
+        </div>
+        <div class="recommendation">
+          <span> <b>Would you recommend this product to a friend? </b> </span>
+          <div class="d-flex d-flex-gap radio-container">
+            <input type="radio" id="yes" name="Yes" value="Yes" checked />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="No" value="No" />
+            <label for="no">No</label>
+          </div>
+        </div>
+        <div class="review">
+          <h4>Product review</h4>
+          <input
+            type="text"
+            placeholder="Example: Since I bought this a month ago, it has been used a lot."
+          />
+        </div>
+        <div class="details d-flex d-flex-center d-flex-gap">
+          <div class="d-flex d-flex-column">
+            <h5>Nickname</h5>
+            <input type="text" placeholder="Example: bob27" />
+          </div>
+          <div class="d-flex d-flex-column">
+            <h5>Email address (will not be published)</h5>
+            <input type="email" placeholder="Example: your@email.com" />
+          </div>
+        </div>
+        <div class="terms">
+          <input type="radio" id="terms" name="terms" value="terms" />
+          <label for="terms">I accept the terms and conditions</label>
+        </div>
+        <div class="disclaimer">
+          <span
+            >You will be able to receive emails in connection with this review
+            (eg if others comment on your review). All emails contain the option
+            to unsubscribe. We can use the text and star rating from your review
+            in other marketing.</span
+          >
+        </div>
+        <div class="submit">
+          <button>Submit product review</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

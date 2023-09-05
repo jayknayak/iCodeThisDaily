@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(198 201 223);
+  color: #151a43;
+}
+h6,
+h4 {
+  margin: 0;
+}
+img {
+  width: 10vw;
+  height: 10vh;
+  border-radius: 50%;
+}
+button {
+  border: none;
+  padding: 0.5rem;
+  background-color: #151a43;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 10px;
+}
+.d-flex {
+  display: flex;
+}
+.d-flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.d-flex-column {
+  flex-direction: column;
+}
+.card-container {
+  height: 75%;
+  position: relative;
+}
+#rectangle,
+.card {
+  position: absolute;
+  border-radius: 0.5rem;
+}
+#rectangle {
+  width: 150px;
+  height: 280px;
+  background: #151a43;
+}
+.card {
+  width: 200px;
+  height: 230px;
+  background: #fff;
+  overflow: hidden;
+}
+.bars {
+  top: 15px;
+  right: 15px;
+  left: auto;
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+}
+#circle1 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgb(40, 175, 101, 0.1);
+  position: inherit;
+  bottom: -20px;
+  left: -15px;
+}
+#circle2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgb(58, 134, 241, 0.1);
+  position: inherit;
+  bottom: 140px;
+  left: 110px;
+}
+.bio {
+  position: relative;
+  padding: 1.5rem;
+  text-align: center;
+}
+.details {
+  margin-top: 5%;
+}
+.location {
+  margin-top: 2%;
+  gap: 5px;
+  margin-bottom: 10%;
+}

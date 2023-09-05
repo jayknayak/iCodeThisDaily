@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body
+    class="bg-indigo-950 flex justify-center items-center min-h-screen text-white"
+  >
+    <div class="bg-indigo-800 w-3/5 h-96 p-4">
+      <header class="flex items-center gap-4">
+        <i class="go-left fa-solid fa-chevron-left cursor-pointer"></i>
+        <p class="current-date"></p>
+        <i class="go-right fa-solid fa-chevron-right cursor-pointer"></i>
+      </header>
+      <div class="mt-5">
+        <div class="grid grid-cols-7 gap-1 text-center">
+          <div>SUN</div>
+          <div>MON</div>
+          <div>TUE</div>
+          <div>WED</div>
+          <div>THU</div>
+          <div>FRI</div>
+          <div>SAT</div>
+        </div>
+        <div class="days grid grid-cols-7 text-center gap-4 mt-3"></div>
+      </div>
+    </div>
+    <div class="bg-indigo-800 flex flex-col items-center w-1/4 h-96 p-3">
+      <h1 class="selected-day"></h1>
+      <h4 class="selected-date text-xs"></h4>
+      <div class="mt-20 text-7xl">
+        <i class="fa-regular fa-calendar text-violet-400"></i>
+      </div>
+      <div class="mt-20">
+        <button class="rounded-full bg-fuchsia-600 px-8 py-1 items-end">
+          ADD EVENT
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

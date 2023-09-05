@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f6f4ff;
+    width: 100%;
+    height: 100vh;
+}
+h2, h4, h5{
+    margin: 0 0 0.2rem 0;
+    padding: 0;
+}
+input{
+    border: 1px solid #f1f3f7;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    word-wrap: break-word;
+}
+button{
+    border:none;
+    padding: 0.75rem;
+    background-color: #121633;
+    color: #fff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.d-flex{
+    display: flex;
+} 
+.d-flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.d-flex-column{
+    flex-direction: column;
+}
+.d-flex-gap{
+    gap: 0.5rem;
+}
+.d-inline{
+    display: inline-block;
+}
+.parent{
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.bg-block{
+    width: 550px;
+    height: 400px;
+    background-color: #fed2d1;
+    border-radius: 1.5rem;
+    position: absolute;
+}
+.fg-block{
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 1rem;
+    z-index: 2;
+    padding: 2rem;
+}
+.close-window{
+    width: 30px;
+    height: 30px;
+    background-color: #f6f4ff;
+    border-radius: 50%;
+    float: right;
+}
+.rating, .review, .recommendation, .details, .terms, .disclaimer, .submit{
+    margin: 1rem;
+}
+.star-container{
+    margin: 0.5rem 0 0.5rem 0;
+}
+.star-border{
+    border: 1px solid #f1f3f7;
+    padding: 0.3rem;
+}
+.review input{
+    
+    width: 100%;
+}
+.radio-container input{
+    border: 1px solid red;
+}
+.details{
+    width: 100%;
+}
+.details input{
+    width: auto;
+}

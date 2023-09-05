@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body
+    class="bg-[#2d3e50] flex flex-col justify-center items-center min-h-screen p-4"
+  >
+    <div
+      class="bg-[#f6f7f9] flex w-[75vw] max-[640px]:w-[90vw] rounded justify-between h-fit"
+    >
+      <div class="grid grid-cols-5 gap-3 text-xs p-4">
+        <div class="cursor-pointer">HOME</div>
+        <div class="cursor-pointer">ABOUT</div>
+        <div class="cursor-pointer">WORKS</div>
+        <div class="cursor-pointer">SUPPORT</div>
+        <div class="cursor-pointer">CONTACT</div>
+      </div>
+      <div>
+        <input
+          class="h-full rounded text-xs p-2 text-[#d3d3d3]"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="&#xF002;   Search"
+          style="font-family: Arial, FontAwesome"
+        />
+      </div>
+    </div>
+    <div
+      class="flex w-[75vw] max-[640px]:w-[90vw] max-[640px]:flex-col gap-3 mt-3"
+    >
+      <div class="flex w-[70%] max-[640px]:w-full">
+        <div
+          class="bg-[url('https://images.unsplash.com/photo-1444724334165-e7050f2229a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1945&q=80')] bg-cover w-[50%] flex flex-col justify-end flex-1 rounded-s-lg text-white text-center p-4"
+        >
+          <span class="text-xl"> Aliquam etiam </span>
+          <span>
+            nulla, metus mattis mollis pulvinar sapien amet sit eget.
+          </span>
+        </div>
+        <div
+          class="bg-[#f6f7f9] w-[50%] flex flex-col flex-1 rounded-r-md text-white text-center p-4"
+        >
+          <span class="text-black font-bold mt-3"> SIGN IN </span>
+          <div class="flex flex-col gap-2 mt-4">
+            <label class="relative">
+              <input
+                class="rounded p-2 text-[#d3d3d3] w-full pl-8"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+              />
+              <i
+                class="fa-regular fa-envelope absolute top-3 left-2 text-[#d2f4ef] mt-0.5"
+              ></i>
+            </label>
+            <label class="relative">
+              <input
+                class="rounded p-2 text-[#d3d3d3] w-full pl-8"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <i
+                class="fa-solid fa-lock absolute top-3 left-2 text-[#d2f4ef]"
+              ></i>
+            </label>
+            <div class="flex items-center gap-2 text-[#85898c] text-xs">
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember">Remember Me</label>
+            </div>
+          </div>
+          <button class="bg-[#17bc9c] rounded p-2 mt-4">Sign In</button>
+          <div class="flex justify-between text-xs text-[#9ea2a4] mt-2">
+            <span class="cursor-pointer"> Create Account </span>
+            <span class="cursor-pointer"> Forgot Password? </span>
+          </div>
+          <span class="text-xs text-[#cecfd1] mt-3"> or connect with </span>
+          <button class="bg-[#3b5999] rounded p-2 mt-4">Facebook</button>
+          <button class="bg-[#cc3228] rounded p-2 mt-2">Gmail</button>
+        </div>
+      </div>
+      <div class="w-[30%] max-[640px]:w-full flex flex-col">
+        <div
+          class="bg-[url('https://unsplash.com/photos/mSK5nNsAsLY/download?force=true&amp;w=1920')] bg-cover flex flex-col justify-center items-center flex-1 text-white rounded-t-lg"
+        >
+          <span class="text-3xl"> 3 </span>
+          <span class="text-xl">FRIDAY </span>
+          <div class="flex items-center gap-2 end-0">
+            <i class="fa-solid fa-chevron-left"></i>
+            <span> March 2017 </span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="bg-white flex flex-col flex-1 p-4 text-center rounded-b-lg">
+          <div class="grid grid-cols-7 text-xs gap-4">
+            <div>SUN</div>
+            <div>MON</div>
+            <div>TUE</div>
+            <div>WED</div>
+            <div>THU</div>
+            <div>FRI</div>
+            <div>SAT</div>
+          </div>
+          <div class="days grid grid-cols-7 text-xs mt-3 gap-4"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex w-[75vw] max-[640px]:w-[90vw] max-[640px]:flex-col gap-3 mt-3"
+    >
+      <div class="w-[40%] max-[640px]:w-full">
+        <div class="bg-[#ffffff] flex flex-col rounded text-[#4e5254]">
+          <div class="flex flex-col items-center gap-3 p-6">
+            <div class="flex gap-3 items-center w-full p-2">
+              <img
+                src="https://unsplash.com/photos/iEEBWgY_6lA/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkyODY5MDk1fA&amp;force=true&amp;w=1920"
+                alt="user"
+                class="w-20 h-20 rounded-full"
+              />
+              <div class="flex flex-col">
+                <span> John C. Manley </span>
+                <span class="text-xs text-[#9ea2a4]"> UK, London </span>
+              </div>
+            </div>
+            <div class="flex justify-between w-full p-2">
+              <div class="flex flex-col">
+                <span class="text-xl"> 14586 </span>
+                <span class="text-xs"> Followers </span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xl"> 9753 </span>
+                <span class="text-xs"> Following </span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xl"> 547 </span>
+                <span class="text-xs"> Photos </span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#f6f7f9] w-full px-8 py-4 rounded-b-lg">
+            <button class="bg-[#18bb9c] w-full rounded px-4 py-2 text-white">
+              Follow
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white w-[60%] max-[640px]:w-full max-[640px]:h-[30vh] flex flex-col py-4 rounded overflow-hidden"
+      >
+        <div class="flex flex-col items-center p-4 text-[#4e5254]">
+          <span class="text-xl"> Gallery </span>
+          <span class="text-xs"> #loremtag </span>
+        </div>
+        <div class="w-full flex flex-1 gap-1">
+          <div
+            class="bg-[url('https://picsum.photos/id/62/200/150')] bg-cover flex-1 rounded hover:scale-110 transition-all duration-100 cursor-pointer"
+          ></div>
+          <div
+            class="bg-[url('https://unsplash.com/photos/HyZcCKy0oMM/download?force=true&amp;w=1920')] bg-cover flex-1 rounded hover:scale-110 transition-all duration-100 cursor-pointer"
+          ></div>
+          <div
+            class="bg-[url('https://unsplash.com/photos/b1yhEXfyVKg/download?force=true&amp;w=1920')] bg-cover flex-1 rounded hover:scale-110 transition-all duration-100 cursor-pointer"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

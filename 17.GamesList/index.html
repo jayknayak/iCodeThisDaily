@@ -1,0 +1,326 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-white flex flex-col items-center w-[100vw] p-0 m-0">
+    <div class="w-[100%] flex justify-center items-end p-8">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-[80%] max-[640px]:w-[90%]"
+      >
+        <div class="flex gap-3 text-slate-500">
+          <span class="cursor-pointer">Home</span>
+          <span class="cursor-pointer">Apps</span>
+          <span class="cursor-pointer text-blue-600">Games</span>
+          <span class="cursor-pointer">Music</span>
+          <span class="cursor-pointer">Movies&TV</span>
+        </div>
+        <div class="flex">
+          <label class="relative">
+            <input
+              class="p-2 pl-8"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search"
+            />
+            <i class="absolute top-3 left-2 fa-solid fa-magnifying-glass"></i>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#fafafa] w-[100%] flex justify-center items-center p-8">
+      <div class="flex flex-col w-[80%] max-[640px]:w-[90%]">
+        <div class="flex flex-col">
+          <div class="flex justify-between">
+            <span class="text-lg"> New Games </span>
+            <span class="text-blue-600 text-xs cursor-pointer">Load More</span>
+          </div>
+          <div class="flex max-[640px]:flex-col mt-2">
+            <div class="flex flex-col flex-1">
+              <div class="flex-1">
+                <img
+                  class="h-full"
+                  src="https://media.contentapi.ea.com/content/dam/eacom/NFSNL/common/nfsnl-tu60-keyart-desertshroud-1920x1080-blogpost.jpg.adapt.crop16x9.431p.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-between items-center flex-1 p-2">
+                <span class="text-sm">Need for Speed No Limits</span>
+                <div class="flex gap-0.5 text-xs text-[#8f9eec]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex-1">
+                <img
+                  src="https://i0.wp.com/apps-on-mac.com/wp-content/uploads/2022/08/how-to-play-junes-journey-on-pc-or-mac.webp"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-between items-center flex-1 p-2">
+                <span class="text-sm">June's Journey</span>
+                <div class="flex gap-0.5 text-xs text-[#8f9eec]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex-1">
+                <img
+                  class="h-full"
+                  src="https://s3.amazonaws.com/prod-media.gameinformer.com/styles/thumbnail/s3/legacy-images/The%20Thrill%20And%20Terror%20Of%20Making%20Monsters/Batsseries610_0.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-between items-center flex-1 p-2">
+                <span class="text-sm">Batman: The Enemy Within</span>
+                <div class="flex gap-0.5 text-xs text-[#8f9eec]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col mt-4">
+          <div class="flex justify-between">
+            <span class="text-lg"> Recommended for you </span>
+            <span class="text-blue-600 text-xs cursor-pointer">Load More</span>
+          </div>
+          <div class="grid grid-cols-3 md:grid-cols-6">
+            <div class="flex flex-col flex-1">
+              <div class="flex-1">
+                <img
+                  class="w-full"
+                  src="https://lumiere-a.akamaihd.net/v1/images/p_insideout_19751_af12286c.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col flex-1 p-2 text-xs">
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <div class="flex gap-0.5 text-[#8f9eec]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>Free</span>
+                </div>
+                <div class="flex">
+                  <span class="text-xs">Inside Out</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex-1">
+                <img
+                  class="w-full"
+                  src="https://m.media-amazon.com/images/M/MV5BZWRiMjNlMjctOWZlMC00NTA0LWJlZTEtM2IxZDg0NTcyNWYxXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col flex-1 p-2 text-xs">
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <div class="flex gap-0.5 text-[#8f9eec]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>Free</span>
+                </div>
+                <div class="flex">
+                  <span class="text-xs">Candy Crush</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex-1">
+                <img
+                  class="w-full"
+                  src="https://static.posters.cz/image/750/postere/angry-birds-collage-i11949.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col flex-1 p-2 text-xs">
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <div class="flex gap-0.5 text-[#8f9eec]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>Free</span>
+                </div>
+                <div class="flex">
+                  <span class="text-xs">Angry Birds Evolution</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex-1">
+                <img
+                  class="w-full"
+                  src="https://media.istockphoto.com/id/458294725/photo/super-mario.jpg?s=170667a&amp;w=0&amp;k=20&amp;c=VOhueifNrwABVmhSVh_iIfPfVgaMjA_4tidhgaFY_cM="
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col flex-1 p-2 text-xs">
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <div class="flex gap-0.5 text-[#8f9eec]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>Free</span>
+                </div>
+                <div class="flex">
+                  <span class="text-xs">Super Mario Run</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex-1">
+                <img
+                  class="w-full"
+                  src="https://thumbnails.pcgamingwiki.com/f/fd/Fruit_Ninja_VR_cover.jpg/300px-Fruit_Ninja_VR_cover.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col flex-1 p-2 text-xs">
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <div class="flex gap-0.5 text-[#8f9eec]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>Free</span>
+                </div>
+                <div class="flex">
+                  <span class="text-xs">Fruit Ninja</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex-1">
+                <img
+                  class="w-full"
+                  src="https://m.media-amazon.com/images/M/MV5BYzgzY2NkZjEtMzExNC00MDUyLTgyOTYtNzYyNTYzODQ4MjMzXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col flex-1 p-2 text-xs">
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <div class="flex gap-0.5 text-[#8f9eec]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <span>Free</span>
+                </div>
+                <div class="flex">
+                  <span class="text-xs">Sonic Dash</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col mt-4">
+          <div class="flex justify-between">
+            <span class="text-lg"> Trending Now </span>
+            <span class="text-blue-600 text-xs cursor-pointer">Load More</span>
+          </div>
+          <div class="flex max-[640px]:flex-col mt-2">
+            <div class="flex flex-col flex-1">
+              <div class="grow">
+                <img
+                  class="h-full"
+                  src="https://portal.pixelfederation.com/bundles/pixelfederationgame/img/homepage/da_thumb.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-between items-center flex-0 p-2">
+                <span class="text-sm">Diggy's Adventure</span>
+                <div class="flex gap-0.5 text-xs text-[#8f9eec]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="grow">
+                <img
+                  class="h-full"
+                  src="https://i.ibb.co/ryzNct1/chavesadventures.webp"
+                  alt="Chaves Adventures"
+                />
+              </div>
+              <div class="flex justify-between items-center flex-0 p-2">
+                <span class="text-sm">Chaves Adventure</span>
+                <div class="flex gap-0.5 text-xs text-[#8f9eec]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="grow">
+                <img
+                  class="h-full"
+                  src="https://i.ibb.co/qW87t14/plantsvszombies2.webp"
+                  alt="Plants vs Zombies 2"
+                />
+              </div>
+              <div class="flex justify-between items-center flex-0 p-2">
+                <span class="text-sm">Plants vs. Zombies 2</span>
+                <div class="flex gap-0.5 text-xs text-[#8f9eec]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
