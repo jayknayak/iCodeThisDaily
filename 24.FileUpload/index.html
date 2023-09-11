@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-[#eadccf] flex justify-center items-center min-h-screen">
+    <div class="w-[50vw] md:[w-35vw] border-2 border-[#df700e] flex flex-col">
+      <div class="bg-[#ff9436] w-full text-center">
+        <span class="text-2xl font-bold text-white"> FILE UPLOAD </span>
+      </div>
+      <div class="flex flex-col gap-2 px-4 py-8 bg-white">
+        <div class="flex gap-2 w-full">
+          <i class="fa-regular fa-file-pdf text-4xl text-slate-400"></i>
+          <div class="flex flex-col w-[85%]">
+            <span class="text-sm text-slate-400">LB concepts.pdf</span>
+            <div class="flex gap-4">
+              <div class="flex flex-col w-full">
+                <span
+                  class="block w-full bg-white border-2 border-[#3ba7c6] grow rounded"
+                >
+                  <span class="block w-[70%] bg-[#6fcef8] h-4"> </span>
+                </span>
+                <span
+                  class="text-right text-[#ff9436] text-xs underline cursor-pointer"
+                >
+                  Pause
+                </span>
+              </div>
+              <i
+                class="fa-solid fa-x text-sm text-slate-400 cursor-pointer"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 w-full">
+          <i class="fa-regular fa-file-pdf text-4xl text-slate-500"></i>
+          <div class="flex flex-col w-[85%]">
+            <span class="text-sm text-slate-500">File Upload_dailyui.pdf</span>
+            <div class="flex gap-4">
+              <div class="flex flex-col w-full">
+                <span
+                  class="block w-full bg-white border-2 border-[#3ba7c6] grow rounded"
+                >
+                  <span class="block w-[100%] bg-[#6fcef8] h-4"> </span>
+                </span>
+                <div class="flex gap-2 justify-end">
+                  <span
+                    class="text-right text-[#ff9436] text-xs underline cursor-pointer"
+                  >
+                    Share link
+                  </span>
+                  <span
+                    class="text-right text-[#ff9436] text-xs underline cursor-pointer"
+                  >
+                    View file
+                  </span>
+                </div>
+              </div>
+              <i
+                class="fa-solid fa-trash text-sm cursor-pointer text-slate-400"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2 w-full">
+          <i class="fa-regular fa-file-pdf text-4xl text-slate-500"></i>
+          <div class="flex flex-col w-[85%]">
+            <span class="text-sm text-slate-500">Layout.pdf</span>
+            <div class="flex gap-4">
+              <div class="flex flex-col w-full">
+                <span
+                  class="block w-full bg-white border-2 border-[#3ba7c6] grow rounded"
+                >
+                  <span class="block w-[100%] bg-[#6fcef8] h-4"> </span>
+                </span>
+                <div class="flex gap-2 justify-end">
+                  <span
+                    class="text-right text-[#ff9436] text-xs underline cursor-pointer"
+                  >
+                    Share link
+                  </span>
+                  <span
+                    class="text-right text-[#ff9436] text-xs underline cursor-pointer"
+                  >
+                    View file
+                  </span>
+                </div>
+              </div>
+              <i
+                class="fa-solid fa-trash text-sm cursor-pointer text-slate-400"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="relative text-center mt-3 flex justify-center items-center">
+          <i class="fa-solid fa-cloud text-[#3ba7c6] text-[10rem] relative"></i>
+          <div class="absolute gap-2 flex flex-col text-white">
+            <span class="text-xs">Drag and drop files here</span>
+            <span class="text-xs">OR</span>
+            <button class="bg-[#ff9436]">SELECT FILES</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
