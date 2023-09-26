@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body
+    class="bg-[#141318] flex justify-center items-center min-h-screen text-sm"
+  >
+    <div class="bg-[#1c1f26] w-[90vw] sm:w-[70vw] flex p-2 gap-2">
+      <div class="w-[45%] flex flex-col">
+        <div class="bg-[#3d5e6f] flex flex-col py-8 px-4 gap-4">
+          <span class="text-white font-bold">Settings</span>
+          <div
+            class="flex flex-col sm:flex-row gap-1 justify-between text-[#9fa29c] mt-4"
+          >
+            <input type="checkbox" id="airplane" class="peer sr-only" />
+            <label
+              for="airplane"
+              class="cursor-pointer peer-checked:text-[white]"
+              >Airplane mode</label
+            >
+            <label
+              for="airplane"
+              class="relative w-12 h-6 bg-[#1d212a] box-content rounded-full cursor-pointer before:absolute before:w-4 before:h-4 before:top-1 before:left-1 before:bg-white/70 before:transition-all before:ease before:rounded-full peer-checked:before:bg-[#f5ad50] peer-checked:before:translate-x-[1.5rem]"
+            ></label>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row gap-1 justify-between text-[#9fa29c]"
+          >
+            <input type="checkbox" id="wifi" class="peer sr-only" checked />
+            <label for="wifi" class="cursor-pointer peer-checked:text-[white]"
+              >WI-FI</label
+            >
+            <label
+              for="wifi"
+              class="relative w-12 h-6 bg-[#1d212a] box-content rounded-full cursor-pointer before:absolute before:w-4 before:h-4 before:top-1 before:left-1 before:bg-white/70 before:transition-all before:ease before:rounded-full peer-checked:before:bg-[#f5ad50] peer-checked:before:translate-x-[1.5rem]"
+            ></label>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row gap-1 justify-between text-[#9fa29c]"
+          >
+            <input type="checkbox" id="bluetooth" class="peer sr-only" />
+            <label
+              for="bluetooth"
+              class="cursor-pointer peer-checked:text-white"
+              >Bluetooth</label
+            >
+            <label
+              for="bluetooth"
+              class="relative w-12 h-6 bg-[#1d212a] box-content rounded-full cursor-pointer before:absolute before:w-4 before:h-4 before:top-1 before:left-1 before:bg-white/70 before:transition-all before:ease before:rounded-full peer-checked:before:bg-[#f5ad50] peer-checked:before:translate-x-[1.5rem]"
+            ></label>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row gap-1 justify-between text-[#9fa29c]"
+          >
+            <input
+              type="checkbox"
+              id="Notifications"
+              class="peer sr-only"
+              checked
+            />
+            <label
+              for="Notifications"
+              class="cursor-pointer peer-checked:text-white"
+              >Notifications</label
+            >
+            <label
+              for="Notifications"
+              class="relative w-12 h-6 bg-[#1d212a] box-content rounded-full cursor-pointer before:absolute before:w-4 before:h-4 before:top-1 before:left-1 before:bg-white/70 before:transition-all before:ease before:rounded-full peer-checked:before:bg-[#f5ad50] peer-checked:before:translate-x-[1.5rem]"
+            ></label>
+          </div>
+          <div
+            class="flex justify-between items-center text-white mt-8 cursor-pointer"
+          >
+            <span class="font-bold">Software Update</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center text-white py-8 px-4 cursor-pointer"
+        >
+          <span class="font-bold">General Settings</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="bg-[#3d5e6f] flex flex-col text-white py-8 px-4 gap-5">
+          <div class="flex justify-between items-center cursor-pointer">
+            <span class="font-bold">Apps</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex justify-between items-center cursor-pointer">
+            <span class="font-bold">Storage</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex justify-between items-center cursor-pointer">
+            <span class="font-bold">Data Usage</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex justify-between items-center cursor-pointer">
+            <span class="font-bold">Security</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex justify-between items-center cursor-pointer">
+            <span class="font-bold">Other Settings</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="w-[55%] flex flex-col p-2 text-[#9fa29c]">
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white text-lg">Display & Brightness</span>
+          <div class="flex flex-col sm:flex-row gap-1 pl-3 justify-between">
+            <label for="brightness">Brightness</label>
+            <input
+              type="range"
+              id="brightness"
+              min="20"
+              max="100"
+              value="75"
+              step="5"
+              class="accent-[#4d9192] disabled:opacity-50 w-full max-w-[150px]"
+            />
+          </div>
+          <div class="flex flex-col sm:flex-row gap-1 pl-3 justify-between">
+            <input
+              id="autoBrightness"
+              type="checkbox"
+              class="peer sr-only"
+              checked
+            />
+            <label
+              for="autoBrightness"
+              class="cursor-pointer peer-checked:text-white"
+              >Auto Brightness</label
+            >
+            <label
+              for="autoBrightness"
+              class="relative w-12 h-6 bg-[#1a222b] box-content border-2 border-[#3a5e6e] rounded-full cursor-pointer before:absolute before:top-1 before:left-1 before:bg-white/70 before:w-4 before:h-4 before:transition-all before:ease before:rounded-full peer-checked:before:bg-[#4d9192] peer-checked:border-[#4d9192] peer-checked:before:translate-x-[1.5rem]"
+            ></label>
+          </div>
+          <div class="flex pl-3 items-center cursor-pointer justify-between">
+            <span>Text Style</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-1 pl-3 justify-between">
+            <input id="boldText" type="checkbox" class="peer sr-only" />
+            <label for="boldText" class="cursor-pointer peer-checked:text-white"
+              >Bold Text</label
+            >
+            <label
+              for="boldText"
+              class="relative w-12 h-6 bg-[#1a222b] box-content border-2 border-[#3a5e6e] rounded-full cursor-pointer before:absolute before:top-1 before:left-1 before:bg-white/70 before:w-4 before:h-4 before:transition-all before:ease before:rounded-full peer-checked:before:bg-[#4d9192] peer-checked:border-[#4d9192] peer-checked:before:translate-x-[1.5rem]"
+            ></label>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white text-lg mt-8"
+            >Sounds & Haptics</span
+          >
+          <div class="flex pl-3 items-center justify-between cursor-pointer">
+            <span>Ringtone</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex pl-3 items-center justify-between cursor-pointer">
+            <span>Volume</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex pl-3 items-center justify-between cursor-pointer">
+            <span>Vibrate on Touch</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex pl-3 items-center justify-between cursor-pointer">
+            <span>Vibrate When Silent</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex pl-3 items-center justify-between cursor-pointer">
+            <span>Screen Lock Sound</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="flex pl-3 items-center justify-between cursor-pointer">
+            <span>Dial Pad Tone</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-auto mb-4"
+        >
+          <button
+            class="py-1 px-6 rounded-full border-4 border-[#3d5e6f] bg-white text-[#3d5e6f] text-xl font-bold"
+          >
+            Save
+          </button>
+          <button
+            class="py-1 px-6 rounded-full border-4 border-[#3d5e6f] bg-white text-[#aca59d] text-xl font-bold"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
