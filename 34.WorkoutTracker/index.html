@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="bg-[#057287] flex justify-center items-center min-h-screen">
+    <div
+      class="bg-[#088ca3] w-[80vw] sm:w-[40vw] drop-shadow-2xl flex flex-col text-white"
+    >
+      <div class="flex flex-col justify-center items-center gap-1 p-3">
+        <span class="text-xl"> TUESDAY </span>
+        <span class="text-xs"> September 26 2016, 07:30 </span>
+      </div>
+      <div
+        class="bg-white flex flex-col justify-center items-center text-[#858585] p-4 gap-4 drop-shadow-2xl"
+      >
+        <div
+          class="relative isolate tracker border border-[#fb3b76] rounded-full w-32 h-32 items-center flex flex-col justify-center before:-z-10 before:absolute before:bg-white before:rounded-full before:inset-1"
+        >
+          <p class="text-4xl">4.8</p>
+          <p class="font-bold text-2xl">KM</p>
+        </div>
+        <div class="flex justify-around w-full items-center">
+          <div class="text-center">
+            <p>TIME</p>
+            <p class="font-bold text-2xl">23:40</p>
+          </div>
+          <div class="text-center">
+            <p>CALORIES</p>
+            <p class="font-bold text-2xl">510</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center p-4 gap-4">
+        <span class="text-2xl">Latest activities</span>
+        <div class="flex w-full justify-center gap-4 items-center text-left">
+          <i class="fa-solid fa-person-running grow"></i>
+          <span class="grow">11 Km</span>
+          <span class="grow">1h 20min</span>
+          <span class="grow">478 calories</span>
+        </div>
+        <div class="flex w-full justify-center gap-4 items-center text-left">
+          <i class="fa-solid fa-bicycle grow"></i>
+          <span class="grow">45 Km</span>
+          <span class="grow">2h 55min</span>
+          <span class="grow">865 calories</span>
+        </div>
+        <div class="flex w-full justify-center gap-4 items-center text-left">
+          <i class="fa-solid fa-bicycle grow"></i>
+          <span class="grow">45 Km</span>
+          <span class="grow">55min</span>
+          <span class="grow">865 calories</span>
+        </div>
+      </div>
+      <div class="bg-white flex justify-between p-4 items-center">
+        <i class="fa-solid fa-house text-[#208fa3] text-2xl cursor-pointer"></i>
+        <button
+          class="bg-gradient-to-r from-[#fb3b76] to-[#bf356e] rounded-full px-8 p-2 text-2xl font-bold"
+        >
+          GO
+        </button>
+        <i class="fa-solid fa-bars text-[#208fa3] text-2xl cursor-pointer"></i>
+      </div>
+    </div>
+  </body>
+</html>
