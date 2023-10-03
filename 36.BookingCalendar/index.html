@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-[#f1f6fc] flex justify-center items-center min-h-screen">
+    <div class="w-[50vw] flex flex-col rounded-lg text-white">
+      <div
+        class="bg-[#213773] flex justify-between p-6 items-center rounded-t-lg"
+      >
+        <span class="text-xl">Book a training</span>
+        <i class="fa-solid fa-x cursor-pointer text-sm"></i>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center p-2 sm:p-8 bg-white rounded-b-lg"
+      >
+        <div class="flex gap-8 text-black items-center">
+          <i class="fa-solid fa-chevron-left cursor-pointer"></i>
+          <div class="text-center font-bold">
+            <p class="text-lg">Sep. 24</p>
+            <p class="text-xs">Today</p>
+          </div>
+          <i class="fa-solid fa-chevron-right cursor-pointer"></i>
+        </div>
+        <div
+          class="bg-[#213773] rounded-lg p-4 flex flex-col mt-8 w-full gap-8 transition-all duration-200 ease-in hover:scale-105 cursor-pointer"
+        >
+          <div
+            class="flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between items-center"
+          >
+            <div class="flex flex-col text-left gap-1">
+              <p class="text-lg font-bold">Bodypump</p>
+              <p class="text-xs">09.30 . 60 min</p>
+            </div>
+            <button class="bg-white text-black px-2 py-1 rounded-md">
+              Book a spot
+            </button>
+          </div>
+          <div class="flex flex-col flex-start gap-2">
+            <span class="text-sm">Trained By</span>
+            <div class="flex gap-2 items-center">
+              <img
+                class="w-16 h-16 rounded-full object-cover"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              />
+              <span class="text-sm">Emily Stark</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-[#213773] rounded-lg p-4 flex flex-col mt-4 w-full gap-8 transition-all duration-200 ease-in hover:scale-105 cursor-pointer"
+        >
+          <div
+            class="flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between items-center"
+          >
+            <div class="flex flex-col text-left gap-1">
+              <p class="text-lg font-bold">Pilates</p>
+              <p class="text-xs">10.30 . 60 min</p>
+            </div>
+            <button class="bg-white text-black px-2 py-1 rounded-md">
+              Book a spot
+            </button>
+          </div>
+          <div class="flex flex-col flex-start gap-2">
+            <span class="text-sm">Trained By</span>
+            <div class="flex gap-2 items-center">
+              <img
+                class="w-16 h-16 rounded-full object-cover"
+                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              />
+              <span class="text-sm">Erik Nest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
