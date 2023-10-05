@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[#0c1124] flex justify-center items-center min-h-screen">
+    <div
+      id="home"
+      class="bg-[#090c1b] w-[50vw] sm:w-[30vw] flex flex-col items-center text-center p-8 text-[#404a68] rounded-lg cursor-pointer"
+    >
+      <div class="relative">
+        <i class="fa-regular fa-comment text-4xl"></i>
+        <span
+          class="absolute -top-2 -right-2 bg-[#4b8c0e] rounded-lg w-6 h-6 text-sm text-white"
+          >5</span
+        >
+      </div>
+      <div class="flex flex-col items-center mt-4">
+        <span>You have</span>
+        <span class="text-[#7781a4]">5 new messages</span>
+      </div>
+    </div>
+    <div
+      id="inbox"
+      class="bg-[#0c1124] hidden flex flex-col w-[70vw] sm:w-[50vw] p-2 text-[#404a68]"
+    >
+      <div class="bg-[#121830] flex items-center">
+        <span class="relative w-full">
+          <i
+            class="absolute fa-solid fa-magnifying-glass left-2 top-2 text-lg"
+          ></i>
+          <input
+            class="relative bg-inherit pl-12 p-2 w-full"
+            placeholder="Search"
+          />
+          <i
+            id="collapse"
+            class="absolute fa-solid fa-chevron-down right-4 top-2 text-sm cursor-pointer"
+          ></i>
+        </span>
+      </div>
+      <div
+        class="bg-[#121830] flex flex-col py-4 px-4 sm:px-6 mt-4 gap-2 cursor-pointer transition-all duration-100 ease-in hover:scale-105 hover:border-l-4 hover:border-[#4b8c0e]"
+      >
+        <div class="flex justify-between items-center w-full">
+          <div class="flex gap-2 items-center">
+            <i id="star1" class="fa-regular fa-star cursor-pointer"></i>
+            <span>Caleb Waters</span>
+          </div>
+          <span class="text-xs">3 hours ago</span>
+        </div>
+        <span class="text-xs"
+          >Planning to visit Las Vegas or any other vacational</span
+        >
+      </div>
+      <div
+        class="bg-[#121830] flex flex-col py-4 px-4 sm:px-6 mt-1 gap-2 cursor-pointer transition-all duration-100 ease-in hover:scale-105 hover:border-l-4 hover:border-[#4b8c0e]"
+      >
+        <div class="flex justify-between items-center w-full">
+          <div class="flex gap-2 items-center">
+            <i id="star2" class="fa-regular fa-star cursor-pointer"></i>
+            <span>Manuel Lindsey</span>
+          </div>
+          <span class="text-xs">9 hours ago</span>
+        </div>
+        <span class="text-xs"
+          >Planning to visit Las Vegas or any other vacational</span
+        >
+      </div>
+      <div
+        class="bg-[#121830] flex flex-col py-4 px-4 sm:px-6 mt-1 gap-2 cursor-pointer transition-all duration-100 ease-in hover:scale-105 hover:border-l-4 hover:border-[#4b8c0e]"
+      >
+        <div class="flex justify-between items-center w-full">
+          <div class="flex gap-2 items-center">
+            <i id="star3" class="fa-regular fa-star cursor-pointer"></i>
+            <span>Mark George</span>
+          </div>
+          <span class="text-xs">Yesterday</span>
+        </div>
+        <span class="text-xs"
+          >Planning to visit Las Vegas or any other vacational</span
+        >
+      </div>
+      <div
+        class="bg-[#121830] flex flex-col py-4 px-4 sm:px-6 mt-1 gap-2 cursor-pointer transition-all duration-100 ease-in hover:scale-105 hover:border-l-4 hover:border-[#4b8c0e]"
+      >
+        <div class="flex justify-between items-center w-full">
+          <div class="flex gap-2 items-center">
+            <i id="star4" class="fa-regular fa-star cursor-pointer"></i>
+            <span>Lou Fields</span>
+          </div>
+          <span class="text-xs">Yesterday</span>
+        </div>
+        <span class="text-xs"
+          >Planning to visit Las Vegas or any other vacational</span
+        >
+      </div>
+      <div
+        class="bg-[#121830] flex flex-col py-4 px-4 sm:px-6 mt-1 gap-2 cursor-pointer transition-all duration-100 ease-in hover:scale-105 hover:border-l-4 hover:border-[#4b8c0e]"
+      >
+        <div class="flex justify-between items-center w-full">
+          <div class="flex gap-2 items-center">
+            <i id="star5" class="fa-regular fa-star cursor-pointer"></i>
+            <span>Devin Smith</span>
+          </div>
+          <span class="text-xs">01 Oct</span>
+        </div>
+        <span class="text-xs"
+          >Planning to visit Las Vegas or any other vacational</span
+        >
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

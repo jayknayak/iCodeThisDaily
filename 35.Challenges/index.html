@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <div
+      id="mainPage"
+      class="bg-[#363749] w-[75vw] sm:w-[40vw] p-4 flex flex-col text-white gap-4"
+    >
+      <div class="flex justify-between items-center">
+        <h1 class="text-xl">Ongoing challenges</h1>
+        <span
+          id="viewAll"
+          class="text-xs cursor-pointer text-gray-400 hover:text-white transition-all duration-50 ease-in"
+          >View All</span
+        >
+      </div>
+      <div id="dashChallenge" class="flex flex-col">
+        <div
+          class="flex gap-2 items-center cursor-pointer hover:bg-sky-700 hover:scale-110 transition-all delay-100 ease-in overflow-hidden"
+        >
+          <span>Dashboard challenge</span>
+          <label class="animate-bounce px-2 rounded-full bg-[#55e0c1] text-xs"
+            >New</label
+          >
+        </div>
+        <span class="text-gray-400 text-sm">36 submissions</span>
+      </div>
+      <div id="fbChallenge" class="flex flex-col">
+        <div
+          class="flex gap-2 items-center cursor-pointer hover:bg-violet-700 hover:scale-110 transition-all delay-100 ease-in overflow-hidden"
+        >
+          <span>Facebook Redesign Challenge</span>
+          <label class="animate-bounce px-2 rounded-full bg-[#55e0c1] text-xs"
+            >New</label
+          >
+        </div>
+        <span class="text-gray-400 text-sm">84 submissions</span>
+      </div>
+      <div id="aiChallenge" class="flex flex-col">
+        <div
+          class="flex gap-2 items-center cursor-pointer hover:bg-pink-700 hover:scale-110 transition-all delay-100 ease-in overflow-hidden"
+        >
+          <span>AI Challenge</span>
+        </div>
+        <span class="text-gray-400 text-sm">158 submissions</span>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex gap-2 items-center">
+          <span class="text-gray-500">Slack Rebranding Challenge</span>
+          <label class="px-2 rounded-full bg-[#dc815a] text-xs">Closed</label>
+        </div>
+        <span class="text-gray-500 text-sm">247 submissions</span>
+      </div>
+      <div id="codingChallenge" class="flex hidden flex-col">
+        <div class="flex gap-2 items-center">
+          <span class="text-gray-500">Coding Challenge</span>
+          <label class="px-2 rounded-full bg-[#dc815a] text-xs">Closed</label>
+        </div>
+        <span class="text-gray-500 text-sm">350 submissions</span>
+      </div>
+      <div id="designChallenge" class="flex hidden flex-col">
+        <div class="flex gap-2 items-center">
+          <span class="text-gray-500">Design Challenge</span>
+          <label class="px-2 rounded-full bg-[#dc815a] text-xs">Closed</label>
+        </div>
+        <span class="text-gray-500 text-sm">150 submissions</span>
+      </div>
+    </div>
+    <div
+      id="child"
+      class="hidden relative bg-[#363749] w-[70vw] sm:w-[40vw] flex flex-col gap-4 justify-center items-center p-8 text-white"
+    >
+      <i
+        id="closeChild"
+        class="fa-solid fa-x absolute top-4 right-4 cursor-pointer text-xs text-gray-400 hover:text-white transition-all duration-50 ease-in"
+      ></i>
+      <h1 id="childHeader" class="text-2xl text-center"></h1>
+      <span class="text-xs mt-4 text-center"
+        >Vote for your favorite community uploads created for our latest
+        challenge</span
+      >
+      <button
+        id="voteButton"
+        class="animate-bounce bg-gradient-to-r from-[#7b96ff] to-[#bd93fe] px-4 py-1 rounded-lg mt-4 hover:scale-110 transition-all duration-100 ease-in"
+      >
+        Vote Now!
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
