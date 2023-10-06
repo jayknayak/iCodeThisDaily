@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body class="bg-gradient-to-r from-[#6b78ce] to-[#79ade7] flex justify-center items-center min-h-screen">
+    <div class="bg-[#1c1f32] w-[50vw] md:w-[40vw] flex flex-col gap-2 rounded-lg">
+        <div class="bg-[#292847] relative flex items-center justify-center p-3 rounded-t-lg text-[#91bad6]">
+            <i
+          class="absolute fa-solid fa-chevron-left left-3 top-3 text-lg cursor-pointer"
+        ></i>
+            <span class="text-xl">Movies 2016</span>
+        </div>
+        <div class="p-2">
+            <input
+          class="rounded-full p-2 w-full bg-inherit border border-[#91bad6] text-[#91bad6]"
+          placeholder="Search Movies"
+        />
+        </div>
+        <div class="flex flex-col gap-2">
+            <div class="flex justify-between px-2 items-center">
+                <span class="text-[#91bad6]">FANTASY/SCIENCE FICTION</span>
+                <div class="text-[#8491da]">
+                    <span class="text-xs cursor-pointer">See all</span>
+                    <i class="fa-solid fa-caret-right text-xs"></i>
+                </div>
+            </div>
+            <div class="flex justify-between gap-2 items-center px-1  overflow-x-scroll overflow-y-hidden">
+                <div
+                    class="flex flex-col rounded-lg bg-[#292847] cursor-pointer transition-all duration-100 ease-in hover:scale-110">
+                    <div class="w-28 md:w-36">
+                        <img
+                class="object-cover object-center w-full rounded-t-lg"
+                src="https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_QL75_UX190_CR0,8,190,281_.jpg"
+              />
+                    </div>
+                    <div class="flex justify-between p-2 mb-4 items-center">
+                        <span class="text-xs text-white">Arrival</span>
+                        <span class="text-xs text-[#5d8935] font-bold">8.4</span>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col rounded-lg bg-[#292847] cursor-pointer transition-all duration-100 ease-in hover:scale-110">
+                    <div class="w-28  md:w-36">
+                        <img
+                class="object-cover object-center w-full rounded-t-lg"
+                src="https://m.media-amazon.com/images/M/MV5BMjQwOTc0Mzg3Nl5BMl5BanBnXkFtZTgwOTg3NjI2NzE@._V1_QL75_UX190_CR0,0,190,281_.jpg"
+              />
+                    </div>
+                    <div class="flex justify-between p-2 mb-4 items-center">
+                        <span class="text-xs text-white">The 5th Wave</span>
+                        <span class="text-xs text-[#723a0f] font-bold">5</span>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center rounded-lg bg-[#292847] cursor-pointer transition-all duration-100 ease-in hover:scale-110">
+                    <div class="w-28 md:w-36">
+                        <img
+                class="object-cover object-center w-full rounded-t-lg"
+                src="https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_QL75_UX190_CR0,0,190,281_.jpg"
+              />
+                    </div>
+                    <div class="flex justify-between p-2 mb-4 items-center">
+                        <span class="text-xs text-white">Captain America</span>
+                        <span class="text-xs text-[#723a0f] font-bold">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-2">
+            <div class="flex justify-between px-2 items-center">
+                <span class="text-[#91bad6]">COMEDY</span>
+                <div class="text-[#8491da]">
+                    <span class="text-xs cursor-pointer">See all</span>
+                    <i class="fa-solid fa-caret-right text-xs"></i>
+                </div>
+            </div>
+            <div class="flex justify-between gap-2 items-center px-1 overflow-x-scroll overflow-y-hidden">
+                <div
+                    class="flex flex-col rounded-lg bg-[#292847] cursor-pointer transition-all duration-100 ease-in hover:scale-110">
+                    <div class="w-28 md:w-36">
+                        <img
+                class="object-cover object-center w-full rounded-t-lg"
+                src="https://m.media-amazon.com/images/M/MV5BNTdkMzY4MjItNGM4My00ZDM1LThhMmQtY2NmMTYxZWM2ZDBmXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_QL75_UX190_CR0,9,190,281_.jpg"
+              />
+                    </div>
+                    <div class="flex justify-between p-2 mb-4 items-center">
+                        <span class="text-xs text-white">Zoolander 2</span>
+                        <span class="text-xs text-[#5d8935] font-bold">4.8</span>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col rounded-lg bg-[#292847] cursor-pointer transition-all duration-100 ease-in hover:scale-110">
+                    <div class="w-28 md:w-36">
+                        <img
+                class="object-cover object-center w-full rounded-t-lg"
+                src="https://m.media-amazon.com/images/M/MV5BMjBlOTIxNGMtMDAwOS00OTFjLWJkNWEtMDg5NGU0NzE5ZWRhXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_QL75_UX190_CR0,2,190,281_.jpg"
+              />
+                    </div>
+                    <div class="flex justify-between p-2 mb-4 items-center">
+                        <span class="text-xs text-white">Keanu</span>
+                        <span class="text-xs text-[#723a0f] font-bold">6.3</span>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center rounded-lg bg-[#292847] cursor-pointer transition-all duration-100 ease-in hover:scale-110">
+                    <div class="w-28 md:w-36">
+                        <img
+                class="object-cover object-center w-full rounded-t-lg"
+                src="https://m.media-amazon.com/images/M/MV5BODNlNmU4MGItMzQwZi00NGQyLWEyZWItYjFkNmI0NWI4NjBhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_QL75_UX190_CR0,0,190,281_.jpg"
+              />
+                    </div>
+                    <div class="flex justify-between p-2 mb-4 items-center">
+                        <span class="text-xs text-white">The Nice Guy</span>
+                        <span class="text-xs text-[#723a0f] font-bold">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-2">
+            <div class="flex justify-between px-2 items-center">
+                <span class="text-[#91bad6]">ROMANCE/DRAMA</span>
+                <div class="text-[#8491da]">
+                    <span class="text-xs cursor-pointer">See all</span>
+                    <i class="fa-solid fa-caret-right text-xs"></i>
+                </div>
+            </div>
+            <div class="flex justify-between gap-2 items-center px-1  overflow-x-scroll overflow-y-hidden"">
+                <div
+                    class="flex flex-col rounded-lg bg-[#292847] cursor-pointer transition-all duration-100 ease-in hover:scale-110">
+                    <div class="w-28 md:w-36">
+                        <img
+                class="object-cover object-center w-full rounded-t-lg"
+                src="https://m.media-amazon.com/images/M/MV5BNTdkMzY4MjItNGM4My00ZDM1LThhMmQtY2NmMTYxZWM2ZDBmXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_QL75_UX190_CR0,9,190,281_.jpg"
+              />
+                    </div>
+                    <div class="flex justify-between p-2 mb-4 items-center">
+                        <span class="text-xs text-white">Zoolander 2</span>
+                        <span class="text-xs text-[#5d8935] font-bold">4.8</span>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col rounded-lg bg-[#292847] cursor-pointer transition-all duration-100 ease-in hover:scale-110">
+                    <div class="w-28 md:w-36">
+                        <img
+                class="object-cover object-center w-full rounded-t-lg"
+                src="https://m.media-amazon.com/images/M/MV5BMjBlOTIxNGMtMDAwOS00OTFjLWJkNWEtMDg5NGU0NzE5ZWRhXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_QL75_UX190_CR0,2,190,281_.jpg"
+              />
+                    </div>
+                    <div class="flex justify-between p-2 mb-4 items-center">
+                        <span class="text-xs text-white">Keanu</span>
+                        <span class="text-xs text-[#723a0f] font-bold">6.3</span>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center rounded-lg bg-[#292847] cursor-pointer transition-all duration-100 ease-in hover:scale-110">
+                    <div class="w-28 md:w-36">
+                        <img
+                class="object-cover object-center w-full rounded-t-lg"
+                src="https://m.media-amazon.com/images/M/MV5BODNlNmU4MGItMzQwZi00NGQyLWEyZWItYjFkNmI0NWI4NjBhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_QL75_UX190_CR0,0,190,281_.jpg"
+              />
+                    </div>
+                    <div class="flex justify-between p-2 mb-4 items-center">
+                        <span class="text-xs text-white">The Nice Guy</span>
+                        <span class="text-xs text-[#723a0f] font-bold">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

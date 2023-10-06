@@ -1,0 +1,20 @@
+/* scollbar width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* scollbar - Track */
+::-webkit-scrollbar-track {
+    background: #171726;
+}
+
+/* scollbar - Handle */
+::-webkit-scrollbar-thumb {
+    background: #5C96D0;
+    border-radius: 10px;
+}
+
+/* scollbar - Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4187ce
+}
