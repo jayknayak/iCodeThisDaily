@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <!-- Change code below this line -->
+  <body
+    class="bg-[#0a1d3b] flex flex-col md:flex-row justify-center items-center min-h-screen text-white p-4"
+  >
+    <div class="flex flex-col justify-end">
+      <div
+        class="bg-[#fb755c] p-8 w-12 flex justify-center rounded-lg w-auto text-xs gap-2 mt-4"
+      >
+        <div class="flex flex-col justify-center items-center gap-2">
+          <div
+            class="rounded-full w-8 h-8 bg-white/20 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <span>Audio</span>
+        </div>
+        <div class="w-8 h-0.5 flex bg-white mt-4"></div>
+        <div class="flex flex-col justify-center items-center gap-2">
+          <div
+            class="rounded-full w-8 h-8 bg-white/20 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-video"></i>
+          </div>
+
+          <span>Video</span>
+        </div>
+        <div class="w-8 h-0.5 flex bg-white mt-4"></div>
+        <div class="flex flex-col justify-center items-center gap-2">
+          <div
+            class="rounded-full w-8 h-8 bg-white/20 flex justify-center items-center"
+          ></div>
+          <span>Performance</span>
+        </div>
+      </div>
+      <div class="bg-[#9b348f] p-4 rounded-lg flex flex-col mt-6 md:mt-24">
+        <span>Rate your experience</span>
+        <div class="flex gap-4 justify-center items-center mt-4">
+          <span class="w-6 h-6 rounded-full flex justify-center items-center"
+            >1</span
+          >
+          <span class="w-6 h-6 rounded-full flex justify-center items-center"
+            >2</span
+          >
+          <span class="w-6 h-6 rounded-full flex justify-center items-center"
+            >3</span
+          >
+          <span
+            class="w-6 h-6 bg-white/30 rounded-full flex justify-center items-center"
+            >4</span
+          >
+          <span class="w-6 h-6 rounded-full flex justify-center items-center"
+            >5</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col justify-start mt-4 md:ml-24">
+      <div class="bg-[#da627d] p-8 rounded-lg flex flex-col md:ml-8">
+        <span>How do you rate our services</span>
+        <div>
+          <div class="flex gap-4 justify-center item-center mt-4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="flex justify-between w-full mt-4">
+            <span>Bad</span>
+            <span>Very good</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#8443d5] mt-4 flex flex-col p-8 rounded-lg">
+        <span>What didn't work properly?</span>
+        <div class="flex flex-col">
+          <div class="flex gap-2 mt-4">
+            <input class="rounded-lg p-2" type="checkbox" id="blurry" />
+            <label for="blurry">Video was blurry</label>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <input class="rounded-lg p-2" type="checkbox" id="sound" />
+            <label for="sound">Sound wasn't working</label>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <input class="rounded-lg p-2" type="checkbox" id="crashing" />
+            <label for="crashing">App was crashing</label>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <input class="rounded-lg p-2" type="checkbox" id="else" />
+            <label for="else">Else</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Change code above this line -->
+</html>
