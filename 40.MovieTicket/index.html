@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="bg-[#e9f2ef] flex justify-center items-center min-h-screen">
+    <div class="bg-white rounded-lg shadow-lg flex flex-col">
+      <div
+        class="bg-[url('https://m.media-amazon.com/images/M/MV5BNzRiMjg0MzUtNTQ1Mi00Y2Q5LWEwM2MtMzUwZDU5NmVjN2NkXkEyXkFqcGc@._V1_.jpg')] bg-cover relative text-white p-4 w-96 h-64 rounded-t-lg"
+      >
+        <div
+          class="w-full h-full bg-black/60 absolute top-0 left-0 z-1 rounded-t-lg"
+        ></div>
+
+        <div class="absolute top-4 left-4 text-lg md:text-xl cursor-pointer">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="z-10 absolute left-2 bottom-2">
+          <p class="font-bold text-base md:text-xl">Deadpool & Wolverine</p>
+          <p class="flex gap-2 text-sm md:text-base items-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Cineplex Entertainment, Vancouver BC</span>
+          </p>
+        </div>
+      </div>
+      <div class="bg-[#f9fafc] flex flex-col p-3">
+        <div class="flex justify-center item-center gap-6">
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-couch text-[#5a879c]"></i>
+            <span>Available</span>
+          </div>
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-couch text-[#c8d8df]"></i>
+            <span>Booked</span>
+          </div>
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-couch text-[#ec3f79]"></i>
+            <span>Selected</span>
+          </div>
+        </div>
+        <div class="flex flex-col mt-4" id="dynamic-content"></div>
+        <div class="flex flex-col items-center p-8 gap-3">
+          <span class="text-gray-500 text-xs md:text-sm">Screen</span>
+          <div class="w-full h-0.5 bg-[#5a879c] shadow-lg"></div>
+        </div>
+        <div class="bg-[#ec3f79] w-full mt-4 flex p-3 justify-between">
+          <div class="flex flex-col gap-2 items-left">
+            <div class="flex gap-4 text-white text-sm">
+              <span>Date</span>
+              <span>Aug 12</span>
+            </div>
+            <div class="flex gap-4 text-white text-sm">
+              <span>Tickets</span>
+              <span>0</span>
+            </div>
+            <div class="flex gap-4 text-white text-sm font-bold">
+              <span>TOTAL</span>
+              <span>$0</span>
+            </div>
+          </div>
+          <button class="bg-[#ffffff] text-black rounded-lg p-4">
+            <span>Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const container = document.getElementById("dynamic-content");
+      const letters = ["G", "F", "E", "D", "C", "B", "A"];
+
+      letters.forEach((letter) => {
+        const parentDiv = document.createElement("div");
+        parentDiv.className = "flex items-center gap-4";
+        const span = document.createElement("span");
+        span.className = "text-gray-500";
+        span.innerText = letter;
+        parentDiv.appendChild(span);
+        const outerDiv = document.createElement("div");
+        outerDiv.className = "flex gap-8";
+
+        for (let i = 0; i < 2; i++) {
+          const innerDiv = document.createElement("div");
+          innerDiv.className = "flex gap-2";
+          for (let i = 0; i < 5; i++) {
+            const icon = document.createElement("i");
+            icon.className = "fa-solid fa-couch text-[#5a879c] cursor-pointer";
+            innerDiv.appendChild(icon);
+          }
+          outerDiv.appendChild(innerDiv);
+        }
+        parentDiv.appendChild(outerDiv);
+        container.appendChild(parentDiv);
+      });
+    </script>
+  </body>
+  <!-- Change code above this line -->
+</html>
